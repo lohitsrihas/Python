@@ -1,13 +1,14 @@
 def solution(A):
-    B = []
     a = len(A)
     count = 0
-    B.append(A[0])
-    for x in range(len(A)):
-        for y in range(len(B)):
-            if A[x] == B[y]:
-                count+=1
-        if count == 0:
-            B.append(A[x])
-        else: count = 0
-    return len(B)
+    A.sort()
+    if a == 0:
+        count = 0
+    elif a > 0:
+        count = 1
+    for x in range(1,len(A)):
+        if A[x] == A[x-1]:
+            pass
+        else:
+            count+=1
+    return count
