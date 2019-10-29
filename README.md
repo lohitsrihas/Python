@@ -1,2 +1,2 @@
 # Python
-Solutions to multiple python exercises
+Solutions to multiple python problems from Codility
